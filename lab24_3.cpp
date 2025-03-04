@@ -1,7 +1,16 @@
 #include<iostream>
+#include<set>
 
 using namespace std;
+int count(int data[],int size){
+	set<int> num;
+	for (int i = 0; i < size; i++)
+	{
+		num.insert(data[i]);
+	}
+	return num.size();
 
+}
 //Write function count() here.
 
 int main(){	
